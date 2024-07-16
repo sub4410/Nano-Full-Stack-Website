@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nano</title>
+    <link rel="stylesheet" href="applystyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Russo+One&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" />
+  </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="header-content">
+                  <div class="logo-column">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6fb700b521d2e2253968888f8403d1608716d0c7c293a05bb40cd0b223660ac7?apiKey=5b56a7d99e38497d8c36809668471598&amp;" alt="Logo" class="logo">                  </div>
+                  <nav class="nav-column">
+                    <div class="navbar">
+                      <div class="nav-item"><a href=index.html>Home</a></div>
+                      <div class="nav-item"><a href=aboutus.html>About us</a></div>
+                      <div class="nav-item"><a href=faculty.html>Faculty</a></div>
+                      <div class="nav-item"><a href=program.html>Program</a></div>
+                    </div>
+                  </nav>
+                  <div class="cta-column">
+                    <div class="cta-buttons">
+                      <button onclick = "window.location.href = 'contactus.html';"class="cta-button secondary">Contact us</button>
+                      <button onclick = "window.location.href= 'apply.html';"class="cta-button primary">Apply now</button>
+                    </div>
+                  </div>
+                </div>
+              </header>
+            <section class="main-section">
+                <div class="step">
+                    <div class="step-icon-wrapper">
+                        <div class="step-icon"></div>
+                    </div>
+                    <div class="step-title">Select Course</div>
+                    <div class="step-description">Choose a course from the available options.</div>
+                </div>
+                <div class="step">
+                    <div class="step-icon-wrapper">
+                        <div class="step-icon"></div>
+                    </div>
+                    <div class="step-title">Course Details</div>
+                    <div class="step-description">View detailed information about the selected course.</div>
+                </div>
+                <div class="step">
+                    <div class="step-icon-wrapper">
+                        <div class="step-icon"></div>
+                    </div>
+                    <div class="step-title">Application Form</div>
+                    <div class="step-description">Fill out your personal and payment information.</div>
+                </div>
+                <div class="step">
+                    <div class="step-icon-wrapper">
+                        <div class="step-icon"></div>
+                    </div>
+                    <div class="step-title">Review Application</div>
+                    <div class="step-description">Review and confirm your application details.</div>
+                </div>
+                <div class="step">
+                    <div class="step-icon-wrapper">
+                        <div class="step-icon"></div>
+                    </div>
+                    <div class="step-title">Confirmation</div>
+                    <div class="step-description">Receive confirmation of your application submission</div>
+                </div>
+            </section>
+            <section class="form-section">
+                <div class="form-container">
+                    <div class="form-item">
+                        <article>
+                            <h2 class="personal-info-heading">Personal information</h2>
+                            <form id="registerForm" class="registerform" action="/register" method="POST">
+                            <div class="input-group">
+                                <div class="input-row">
+                                    <input type="text" class="input-label" placeholder="First Name" name="fname" required/>
+                                    <input type="text" class="input-label" placeholder="Last Name" name="lname" required/>
+                                </div>
+                                <input type="tel" class="input-field vertical-spacing" placeholder="Phone Number" name="phone" required/>
+                                <input type="email" class="input-field vertical-spacing" placeholder="Email" id="email" name="email" required/>
+                                <input type="text" class="input-field vertical-spacing" placeholder="School Name" name="schoolname" required/>
+                                <input type="text" class="input-field vertical-spacing" placeholder="Class" name="class"required/>
+                                <div class="input-row vertical-spacing">
+                                    <select id="State" size="1" name="state" required>
+                                        <option value="" selected="selected">State</option>
+                                      </select>
+                                </div>
+                                <div class="input-row vertical-spacing">
+                                    <select id="City" size="1" disabled name="city" required>
+                                        <option value="" selected="selected">City</option>
+                                      </select>
+                                </div>
+                                <div class="input-row vertical-spacing">
+                                    <input type="text" class="input-field" placeholder="Guardian Name" name="gname" required/>
+                                    <input type="text" class="input-field" placeholder="Guardian Phone Number" name="gphnumber" required/>
+                                </div>
+                                <input type="text" class="input-field vertical-spacing" placeholder="Guardian Email ID" name="gemail" required/>
+                            </div>
+                            <button type="submit" id="Register" class="register-button">Register</button>
+                            </form>
+                        </article>
+                    </div>
+                    <div class="order-details-section">
+                        <article>
+                            <h2 class="order-heading">Order Details</h2>
+                            <div class="order">
+                              <form id="paymentForm">
+                                <div class="order-item">
+                                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a84992d4b3a17df948d0f24787fd9189951f5ed9f5c7c180781350acf16d37f1?apiKey=5b56a7d99e38497d8c36809668471598&" alt="Course Image" />
+                                    <div class="order-item-title">Join Our 14-Day Intensive Learning Experience</div>
+                                    <div class="order-item-info">
+                                        <div class="price">₹20000</div>
+                                        <div class="discount">
+                                            <div class="old-price">24000</div>
+                                            <div class="discounted-price">25% off</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="price-details">
+                                    <div class="price-row">
+                                        <div class="price-item">Original price</div>
+                                        <div class="price-item">₹20000</div>
+                                    </div>
+                                    <div class="price-row">
+                                        <div class="price-item">Discount</div>
+                                        <div class="price-item">₹500</div>
+                                    </div>
+                                    <div class="price-row">
+                                        <div class="price-item">Subtotal</div>
+                                        <div class="price-item">₹15</div>
+                                    </div>
+                                    <div class="total-price">
+                                        <div class="price-item">TOTAL</div>
+                                        <div class="price-item">₹60000</div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="checkout-button">Complete Check Out</button>
+                              </form>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="enquiry-form-wrapper">
+                <form class="enquiry-form">
+                  <div class="enquiry-form-content">
+                    <div class="enquiry-form-title">
+                      <div class="enquiry-form-subtitle">Latest workshop</div>
+                    </div>
+                    <div class="form-group">
+                      <input type="number" min = 1111111111 max = 9999999999  required class="input-label1" name="Phone Number" placeholder="Enter your phone number"/>
+                      <button type="submit" class="input-field1">Enquire now</button>
+                    </div>
+                  </div>
+                </form>
+              </section>
+           
+               <footer class="footer1">
+                <footer class="footer2">
+                  <div class="footer-content2">
+                    <div class="about-column">
+                      <img src="./images/nano_logo_footer.png" class="footer-logo">
+                      <div class="about-content">
+                        <p class="about-text">
+                          Nano School offers immersive 14-day workshops in coding, design, robotics, and AI, led by IIT alumni at prestigious institutions like IIT Delhi, NIFT Delhi, and IIM. Our hands-on, project-based learning approach ensures students gain practical skills and confidence to excel.
+                        </p>
+                        <div class="social-media">
+                          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/82bfdc07f16f80428706d38bd18595c45b4ed200a9a3f66efc38af5a3540a03c?apiKey=ad00a51b3c6847a2bcc2cbc628f17127&" loading="lazy" class="social-icon" />
+                          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2c295f429453cf5b6256624ce6b9ebc2055f649b2322b4bec0f6c4f05cfd649c?apiKey=ad00a51b3c6847a2bcc2cbc628f17127&" loading="lazy" class="social-icon" />
+                          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d93546b0577cd0a5ebd0f6e90cf61eea7815a7813c923c2f38f164595aa12718?apiKey=ad00a51b3c6847a2bcc2cbc628f17127&" loading="lazy" class="social-icon" />
+                        </div>
+                      </div>
+                    </div>
+            
+                    <div class="nav-column1">
+                      <div class="nav-content">
+                        <div class="nav-links">
+                          <div class="nav-group">
+                            <h2 class="nav-title">Navigation</h2>
+                            <nav>
+                              <a href="index.html" class="nav-link">Home</a>
+                              <a href="aboutus.html" class="nav-link">About</a>
+                              <a href="program.html" class="nav-link">Programs</a>
+                              <a href="terms.html" class="nav-link">Terms and Conditions</a>
+                              <a href="privacy.html" class="nav-link">Privacy Policy</a>
+                            </nav>
+                          </div>
+                          <div class="nav-group">
+                            <h2 class="nav-title">Work hour</h2>
+                            <div class="work-details">
+                              <div class="work-item">
+                                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/18b9d730fd66934d274c7fc61d29aae33d0c97e06d392e645101dd99d5c721a0?apiKey=ad00a51b3c6847a2bcc2cbc628f17127&" loading="lazy" class="social-icon" />
+                                <div class="work-text">7-5 PM Weekdays</div>
+                              </div>
+                              <div class="work-item">
+                                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/cc7b0944bc92ea25e843aef817be14a5a1e4e365bfa0692d9b422d5306b07f27?apiKey=ad00a51b3c6847a2bcc2cbc628f17127&" loading="lazy" class="social-icon" />
+                                <div class="work-text">IIT Delhi Haus khaz,1240</div>
+                              </div>
+                              <div class="contact">
+                                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0dc6b909d29a2ce43fce3e18c760633c03d8a895716b29d0fd68dbabb4d206db?apiKey=ad00a51b3c6847a2bcc2cbc628f17127&" loading="lazy" class="social-icon" />
+                                <div class="work-text">Call us</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+              </footer>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+        <script src=main.js></script>
+    </body>
+</html>
